@@ -1,0 +1,21 @@
+Command List:
+
+These are the important basic function for operating Anaconda Virtual Environment and Installing Packages in your Environment.
+
+For Virtual Environment:
+
+Create Environment ---------------------------->  conda create -n "env_name_without_quotes" python=3.9      ------> (choose python version)
+Activating Environment ------------------------>  conda activate "env_name_without_quotes"
+Set Environment in Interpeter List ------------>  python -m venv "env_name_without_quotes"
+List of Available Environments ---------------->  conda env list  (or)  conda info --envs   
+Deactivating Environment ---------------------->  conda deactivate
+Deleting Environment -------------------------->  conda env remove --n "env_name_without_quotes"  (or)  conda remove --name "env_name_without_quotes" --all
+
+
+For Module/Packages:
+
+Installing Packages ---------------------------> pip install "package_name_without_quotes"
+Remove Packages -------------------------------> pip uninstall "package_name_without_quotes"
+List of available Package ---------------------> pip freeze
+Creating requirements.txt (package export) ----> pip freeze > requirements.txt      -------> (exported in the current path directory)
+Importing Packages from requirements.txt ------> pip install -r requirements.txt  (or)   pip install -r  "/path/to/without/quotes/" requirements.txt
